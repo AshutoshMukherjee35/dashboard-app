@@ -14,7 +14,7 @@ const ContentContainer = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
-  overflow-y: auto; /* Add vertical scrolling */
+  overflow-y: auto; 
 `;
 
 const Dashboard = () => {

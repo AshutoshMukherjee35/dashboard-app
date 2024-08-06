@@ -127,7 +127,7 @@ const RecentOrders = () => {
       </OrderItem>
       <OrderItem>
         <OrderCustomer>
-          <OrderCustomerImage src={CodyImage} alt="customer3" />
+          <OrderCustomerImage src={CodyImage} alt="customer4" />
           <OrderCustomerDetails>
             <span>Cody Fischer</span>
           </OrderCustomerDetails>

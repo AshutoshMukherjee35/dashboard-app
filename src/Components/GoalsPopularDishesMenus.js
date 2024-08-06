@@ -13,7 +13,6 @@ const ItemContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
-//   border-bottom: 1px solid #44475a;
 
   &:last-child {
     border-bottom: none;

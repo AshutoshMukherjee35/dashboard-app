@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ChartImage from '../images/new-graph.png'; // Adjust the path accordingly
+import ChartImage from '../images/new-graph.png'; 
 
 const ChartContainer = styled.div`
   background-color: #282a36;

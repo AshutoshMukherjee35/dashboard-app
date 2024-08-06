@@ -16,7 +16,7 @@ const FeedbackTitle = styled.h2`
 `;
 
 const FeedbackList = styled.div`
-  max-height: 300px; /* Set the desired height */
+  max-height: 300px;
   overflow-y: auto;
 `;
 
@@ -46,7 +46,7 @@ const FeedbackCustomerImage = styled.img`
 
 const FeedbackCustomerName = styled.span`
   font-weight: bold;
-  color: white; /* Optional: Change color to white */
+  color: white; 
 `;
 
 const FeedbackRating = styled.div`
@@ -55,11 +55,11 @@ const FeedbackRating = styled.div`
 `;
 
 const FeedbackStars = styled.span`
-  color: #ffd700; /* Gold color for stars */
+  color: #ffd700; 
 `;
 
 const GreyStars = styled.span`
-  color: #c4c4c4; /* Grey color for stars */
+  color: #c4c4c4; 
 `;
 
 const FeedbackContent = styled.p`
@@ -90,7 +90,7 @@ const CustomerFeedback = () => {
               <FeedbackCustomerImage src={ProfileImage} alt="customer" />
               <FeedbackCustomerName>Jenny Wilson</FeedbackCustomerName>
             </FeedbackCustomer>
-            <FeedbackRating>{generateStars(4)}</FeedbackRating> {/* 4 gold stars */}
+            <FeedbackRating>{generateStars(4)}</FeedbackRating> 
           </FeedbackHeader>
           <FeedbackContent>
             The food was excellent and so was the service. I had the mushroom risotto with scallops which was awesome. I had a burger over greens (gluten-free) which was also very good. They were very conscientious about gluten allergies.
@@ -102,7 +102,7 @@ const CustomerFeedback = () => {
               <FeedbackCustomerImage src={DianneImage} alt="customer" />
               <FeedbackCustomerName>Dianne Russell</FeedbackCustomerName>
             </FeedbackCustomer>
-            <FeedbackRating>{generateStars(5)}</FeedbackRating> {/* 5 gold stars */}
+            <FeedbackRating>{generateStars(5)}</FeedbackRating> 
           </FeedbackHeader>
           <FeedbackContent>
             The food was excellent and so was the service. I had the mushroom risotto with scallops which was awesome. I had a burger over greens (gluten-free) which was also very good. They were very conscientious about gluten allergies.
@@ -114,7 +114,7 @@ const CustomerFeedback = () => {
               <FeedbackCustomerImage src={DevonImage} alt="customer" />
               <FeedbackCustomerName>Devon Lane</FeedbackCustomerName>
             </FeedbackCustomer>
-            <FeedbackRating>{generateStars(5)}</FeedbackRating> {/* 5 gold stars */}
+            <FeedbackRating>{generateStars(5)}</FeedbackRating> 
           </FeedbackHeader>
           <FeedbackContent>
             The food was excellent and so was the service. I had the mushroom risotto with scallops which was awesome. I had a burger over greens (gluten-free) which was also very good. They were very conscientious about gluten allergies.
