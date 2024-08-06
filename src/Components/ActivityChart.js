@@ -7,8 +7,12 @@ const ChartContainer = styled.div`
   padding: 1rem;
   border-radius: 0.5rem;
   margin-bottom: 1rem;
-  height: 210px;
+  height: 250px;
 `;
+
+const Header2 = styled.h2`
+  margin-bottom: 1rem;
+`
 
 const ChartPlaceholder = styled.div`
   height: 10rem;
@@ -21,7 +25,7 @@ const ChartPlaceholder = styled.div`
 const ActivityChart = () => {
   return (
     <ChartContainer>
-      <h2>Activity</h2>
+      <Header2>Activity</Header2>
       <ChartPlaceholder />
     </ChartContainer>
   );

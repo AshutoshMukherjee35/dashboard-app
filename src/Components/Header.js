@@ -8,6 +8,11 @@ const HeaderContainer = styled.header`
   padding: 1rem;
   background-color: #1a1a2e;
   color: white;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `;
 
 const SearchBar = styled.div`
@@ -17,6 +22,10 @@ const SearchBar = styled.div`
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
   margin-right: 1rem;
+
+  @media (max-width: 768px) {
+    margin-bottom: 1rem;
+  }
 `;
 
 const SearchInput = styled.input`

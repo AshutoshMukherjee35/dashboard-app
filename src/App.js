@@ -1,8 +1,8 @@
 import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
-import Sidebar from '../src/Components/Sidebar';
-import MainContent from '../src/Components/MainContent';
-import Header from '../src/Components/Header';
+import Sidebar from './Components/Sidebar';
+import MainContent from './Components/MainContent';
+import Header from './Components/Header';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -19,6 +19,7 @@ const GlobalStyle = createGlobalStyle`
 const AppContainer = styled.div`
   display: flex;
   height: 100vh;
+  overflow: hidden; /* Prevent horizontal overflow */
 `;
 
 const ContentWrapper = styled.div`
@@ -26,7 +27,7 @@ const ContentWrapper = styled.div`
   flex-direction: column;
   flex: 1;
   background-color: #212437;
-  overflow: hidden; 
+  overflow-y: auto; /* Add vertical scrolling */
 `;
 
 const App = () => {
