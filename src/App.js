@@ -19,7 +19,7 @@ const GlobalStyle = createGlobalStyle`
 const AppContainer = styled.div`
   display: flex;
   height: 100vh;
-  overflow: hidden; /* Prevent horizontal overflow */
+  overflow: hidden; 
 `;
 
 const ContentWrapper = styled.div`
@@ -27,7 +27,7 @@ const ContentWrapper = styled.div`
   flex-direction: column;
   flex: 1;
   background-color: #212437;
-  overflow-y: auto; /* Add vertical scrolling */
+  overflow-y: auto; 
 `;
 
 const App = () => {

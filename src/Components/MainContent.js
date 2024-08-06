@@ -31,7 +31,7 @@ const Card = styled.div`
   padding: 1rem;
   border-radius: 0.5rem;
   flex: 1;
-  min-width: 200px; /* Ensure cards don't get too small */
+  min-width: 200px; 
   height: 10rem;
 `;
 
@@ -58,7 +58,7 @@ const CardText = styled.p`
 
 const CardIndicator = styled.span`
   font-size: 0.875rem;
-  color: #4caf50; /* This can change based on status */
+  color: #4caf50; 
 `;
 
 const RightColumn = styled.div`
@@ -68,7 +68,7 @@ const RightColumn = styled.div`
 `;
 
 const ActivitySection = styled.div`
-  margin-top: 2rem; /* Add space above Activity section */
+  margin-top: 2rem; 
 `;
 
 const MainContent = () => {
