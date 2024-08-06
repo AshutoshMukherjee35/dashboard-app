@@ -1,22 +1,27 @@
 import React from 'react';
 import styled from 'styled-components';
-import WadeImage from '../images/profile-image.jpeg'
-import JennyImage from '../images/dianne.jpeg'
-import AlbertImage from '../images/Albert.jpeg'
-import KristineImage from '../images/kristine.jpeg'
-import GuyImage from '../images/Devon.jpeg'
-import CodyImage from '../images/cody.jpeg'
+import WadeImage from '../images/profile-image.jpeg';
+import JennyImage from '../images/dianne.jpeg';
+import AlbertImage from '../images/Albert.jpeg';
+import KristineImage from '../images/kristine.jpeg';
+import GuyImage from '../images/Devon.jpeg';
+import CodyImage from '../images/cody.jpeg';
 
 const OrdersContainer = styled.div`
   background-color: #282a36;
   padding: 1rem;
   border-radius: 0.5rem;
   margin-bottom: 1rem;
+  max-height: 100%; 
+  overflow-y: auto; 
+  @media (max-width: 768px) {
+    max-height: 300px; 
+    overflow-y: scroll;
+  }
 `;
 
 const StyledH2 = styled.h2`
-    padding: 2 rem;
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 `;
 
 const OrderItem = styled.div`
@@ -43,20 +48,20 @@ const OrderCustomerImage = styled.img`
 `;
 
 const OrderField = styled.span`
-  margin: 0 0.5rem; /* Reduced margin for closer spacing */
+  margin: 0 0.5rem;
 `;
 
 const OrderStatus = styled.span`
   color: ${props => {
     switch (props.status) {
       case 'delivered':
-        return '#4caf50'; // green
+        return '#4caf50';
       case 'cancelled':
-        return '#f44336'; // red
+        return '#f44336';
       case 'pending':
-        return '#ff9800'; // orange
+        return '#ff9800';
       default:
-        return '#ffffff'; // white
+        return '#ffffff';
     }
   }};
 `;
